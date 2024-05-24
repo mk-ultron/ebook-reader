@@ -1,3 +1,7 @@
+import streamlit as st
+from gtts import gTTS
+import os
+
 def text_to_speech(text, filename):
     tts = gTTS(text=text, lang='en')
     tts.save(filename)
