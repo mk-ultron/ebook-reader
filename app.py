@@ -7,7 +7,7 @@ def text_to_speech(text, filename):
     tts.save(filename)
     return filename
 
-st.title("Text to Speech Converter")
+st.title("Convert & Download Text to Speech in .mp3")
 
 text = st.text_area("Enter the text you want to convert to speech:")
 
