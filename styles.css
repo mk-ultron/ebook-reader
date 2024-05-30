@@ -14,9 +14,30 @@ body {
     justify-content: space-around;
     padding: 20px;
 }
+.title-card {
+    background-color: #ffffff78;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
 
+.title-card button {
+    background-color: #cdd6f2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.8s ease-in-out, transform 0.8s ease-in-out;
+    border-radius: 8px;
+}
 .story {
-    background-color: #fff;
+    background-color: #ffffff78;
     border: 1px solid #ddd;
     border-radius: 8px;
     width: 300px;
@@ -24,7 +45,7 @@ body {
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.8s ease-in-out;
     overflow: hidden;
 }
 
@@ -47,22 +68,37 @@ body {
 }
 
 .story button {
-    background-color: #6eb363;
-    color: white;
+    background-color: #d2eae1;
+    color: #4c3b1f;
     border: none;
     border-radius: 4px;
     padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: background-color 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
 .story button:hover {
     background: linear-gradient(to bottom right, #ffffff, #ffcccc, #ccffcc, #ccccff);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    transition: all 0.5s ease-in-out;
 }
-
+button#copy-story1 {
+    background-color: #e7e5ce;
+}
+button#copy-story2 {
+    background-color: #e7e5ce;
+}
+button#copy-story3 {
+    background-color: #e7e5ce;
+}
+button#copy-story4 {
+    background-color: #e7e5ce;
+}
+button#copy-story5 {
+    background-color: #e7e5ce;
+}
 p.summary {
     min-height: 12vh;
 }
@@ -150,7 +186,7 @@ p.summary {
     overflow-x: hidden;
     z-index: 1000;
     padding: 20px;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.8s ease-in-out;
     flex-direction: column;
     align-items: center;
 }
