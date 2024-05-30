@@ -1,7 +1,11 @@
+audio {
+    width: -webkit-fill-available;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     background: linear-gradient(to bottom right, #ffffff, #ffcccc, #ccffcc, #ccccff);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -12,8 +16,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 20px;
 }
+
 .title-card {
     background-color: #ffffff78;
     border-radius: 8px;
@@ -36,9 +40,14 @@ body {
     transition: background-color 0.8s ease-in-out, transform 0.8s ease-in-out;
     border-radius: 8px;
 }
+
+button:hover {
+    background: linear-gradient(to bottom right, #ffffff, #ffcccc, #ccffcc, #ccccff);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .story {
     background-color: #ffffff78;
-    border: 1px solid #ddd;
     border-radius: 8px;
     width: 300px;
     margin: 10px;
@@ -75,7 +84,7 @@ body {
     padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
-    transition: background-color 0.8s ease-in-out, transform 0.8s ease-in-out;
+    transition: background-color 0.3s ease-in-out, transform 0.8s ease-in-out;
 }
 
 .story button:hover {
@@ -99,6 +108,7 @@ button#copy-story4 {
 button#copy-story5 {
     background-color: #e7e5ce;
 }
+
 p.summary {
     min-height: 12vh;
 }
@@ -115,7 +125,7 @@ p.summary {
     display: flex;
     flex-direction: column;
     width: 80%;
-    max-width: 800px;
+    max-width: 75vw;
     height: auto;
     position: fixed;
     top: 50%;
@@ -125,13 +135,6 @@ p.summary {
     overflow: hidden;
     background-color: #fff;
     padding: 20px;
-}
-
-.story.expanded img {
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
-    cursor: pointer;
 }
 
 .story.expanded .content {
@@ -152,14 +155,16 @@ p.summary {
 }
 
 .close-btn {
-    display: none;
+    display: block;
     background-color: #f44336;
     color: white;
     border: none;
+    height: 50px;
     border-radius: 4px;
     padding: 10px 20px;
-    margin: 5px;
+    margin: 20px 0 0;
     cursor: pointer;
+    font-size: larger;
 }
 
 .close-btn:hover {
@@ -177,18 +182,19 @@ p.summary {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    max-width: 800px;
+    max-width: 60vw;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
     max-height: 90vh;
     overflow-y: scroll;
     overflow-x: hidden;
     z-index: 1000;
-    padding: 20px;
-    transition: opacity 0.8s ease-in-out;
+    padding: 30px;
+    transition: opacity 0.3s ease-in-out;
     flex-direction: column;
     align-items: center;
+    margin-top: 10px;
 }
 
 .expanded-view img {
@@ -196,7 +202,7 @@ p.summary {
     height: auto;
     border-radius: 8px;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .expanded-view h2 {
@@ -207,12 +213,12 @@ p.summary {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 5px;
     width: 100%;
 }
 
 .expanded-view .content .text {
-    margin-top: 20px;
+    margin-top: 5px;
     max-height: calc(100vh - 220px);
     overflow-y: auto;
     width: 100%;
