@@ -15,7 +15,7 @@ The web app is hosted on GitHub Pages and provides an interface for reading fict
 
 The Streamlit app generates text-to-speech audio for the stories. Users can paste the copied story text, select a voice, and generate audio. The app also provides a download link for the audio file.
 
-- **URL**: [Fast AI Fiction Streamlit App](https://tts-reader.streamlit.app/)
+- **URL**: [Online Text-to-Speech Reader](https://tts-reader.streamlit.app/)
 - **Technologies**: Python, Streamlit, OpenAI API
 
 ## Features
@@ -40,7 +40,7 @@ The Streamlit app generates text-to-speech audio for the stories. Users can past
 4. Click "Generate Audio" to navigate to the Streamlit app.
 
 ### Streamlit App
-1. Visit the [Fast AI Fiction Streamlit App](https://tts-reader.streamlit.app/).
+1. Visit the [Online Text-to-Speech Reader](https://tts-reader.streamlit.app/).
 2. Paste the copied story text into the text area.
 3. Select a voice from the dropdown menu.
 4. Click "Generate Audio" to create the text-to-speech audio.
