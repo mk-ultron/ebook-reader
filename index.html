@@ -9,7 +9,13 @@
 </head>
 <body>
     <!-- Main container for all stories -->
-     <h1 class="title">Fast AI Fiction</h1>
+    <div class="title-card">
+        <!-- Thumbnail image for Story 1 with click event to toggle full story -->
+         
+    <h1 class="title">Fast AI Fiction</h1>
+     <a class="title-button" href="//tts-reader.streamlit.app/" target="_blank"><button>Generate Audio 🔗</button></a>
+    </div>
+
     <div id="stories">
         <!-- Story 1 -->
         <div class="story" id="story1">
@@ -20,7 +26,7 @@
             <!-- Brief summary of Story 1 -->
             <p class="summary">In a galaxy torn apart by war, a humble mechanic named Kira discovers a dying prince and a secret that could unite the warring factions against an ancient, unstoppable force. Embark on an interstellar journey of courage and hope as Kira rises to become the hero the galaxy never expected.</p>
             <!-- Button to read full text of Story 1 -->
-            <button onclick="toggleStory('story1')">Read</button>
+            <button onclick="toggleStory('story1')">Read</button>            
             <!-- Full text of Story 1, initially hidden -->
             <div class="full-text">
                 <!-- Story 1 content paragraphs -->
@@ -39,6 +45,8 @@
             <audio id="audio-story1" src="story1.mp3"></audio>
             <button id="listen-btn-story1" onclick="togglePlayPause('story1')" onmouseover="updateButtonText('story1')" onmouseout="resetButtonText('story1')">Play</button>
             <button onclick="downloadAudio('story1')">Download</button>
+            <button id="copy-story1" onclick="copyText('story1', 'copy-story1')">Copy Story Text</button>
+
         </div>
         <!-- Story 2 -->
         <div class="story" id="story2">
@@ -64,6 +72,8 @@
             <audio id="audio-story2" src="story2.mp3"></audio>
             <button id="listen-btn-story2" onclick="togglePlayPause('story2')" onmouseover="updateButtonText('story2')" onmouseout="resetButtonText('story2')">Play</button>
             <button onclick="downloadAudio('story2')">Download</button>
+            <button id="copy-story2" onclick="copyText('story2', 'copy-story2')">Copy Story Text</button>
+
         </div>
         <!-- Story 3 -->
         <div class="story" id="story3">
@@ -89,6 +99,8 @@
             <audio id="audio-story3" src="story3.mp3"></audio>
             <button id="listen-btn-story3" onclick="togglePlayPause('story3')" onmouseover="updateButtonText('story3')" onmouseout="resetButtonText('story3')">Play</button>
             <button onclick="downloadAudio('story3')">Download</button>
+            <button id="copy-story3" onclick="copyText('story3', 'copy-story3')">Copy Story Text</button>
+
         </div>
         <!-- Story 4 -->
         <div class="story" id="story4">
@@ -114,6 +126,8 @@
             <audio id="audio-story4" src="story4.mp3"></audio>
             <button id="listen-btn-story4" onclick="togglePlayPause('story4')" onmouseover="updateButtonText('story4')" onmouseout="resetButtonText('story4')">Play</button>
             <button onclick="downloadAudio('story4')">Download</button>
+            <button id="copy-story4" onclick="copyText('story4', 'copy-story4')">Copy Story Text</button>
+
         </div>
         <!-- Story 5 -->
         <div class="story" id="story5">
@@ -141,6 +155,7 @@
             <audio id="audio-story5" src="story5.mp3"></audio>
             <button id="listen-btn-story5" onclick="togglePlayPause('story5')" onmouseover="updateButtonText('story5')" onmouseout="resetButtonText('story5')">Play</button>
             <button onclick="downloadAudio('story5')">Download</button>
+            <button id="copy-story5" onclick="copyText('story5', 'copy-story5')">Copy Story Text</button>
         </div>
     </div>
     <!-- Container for the expanded view -->
