@@ -97,3 +97,17 @@ function downloadAudio(storyId) {
     link.click(); // Trigger the download
     document.body.removeChild(link); // Remove the link from the body
 }
+
+function copyText(storyId, buttonId) {
+    var storyElement = document.getElementById(storyId);
+    var fullText = storyElement.querySelector('.full-text').innerText;
+    navigator.clipboard.writeText(fullText).then(function() {
+        var button = document.getElementById(buttonId);
+        button.innerText = 'Text Copied!';
+        setTimeout(function() {
+            button.innerText = 'Copy Text';
+        }, 2000);
+    }, function(err) {
+        console.error('Could not copy text: ', err);
+    });
+}
